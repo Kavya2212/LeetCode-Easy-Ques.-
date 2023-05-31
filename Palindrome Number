@@ -1,0 +1,23 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        long int n,digit,rev=0;
+        n=x;
+        if(n>=0){
+        do{
+            digit=n%10;
+            rev=(rev*10)+digit;
+            n=n/10;
+        }
+        while(n!=0);
+        if(x==rev){
+            //cout<<"true"<<endl;
+            return true;
+        }
+        else //cout<<"false"<<endl;
+        return false;
+        }
+        return false;
+    }
+    
+};
